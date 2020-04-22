@@ -1,5 +1,5 @@
 class Person
-    attr_reader :name
+    attr_reader :name, :happiness, :hygiene
     attr_accessor :bank_account
 
     def initialize(name)
@@ -19,10 +19,6 @@ class Person
         end
     end
 
-    def happiness
-        @happiness
-    end
-
     def hygiene=(num)
         if num > 10
             @hygiene = 10
@@ -31,10 +27,6 @@ class Person
         else
             @hygiene = num
         end
-    end
-
-    def hygiene
-        @hygiene
     end
 
     def happy?
